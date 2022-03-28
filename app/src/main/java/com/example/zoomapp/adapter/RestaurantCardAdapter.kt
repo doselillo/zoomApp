@@ -8,14 +8,16 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.zoomapp.R
+import com.example.zoomapp.RestaurantsFragment
 import com.example.zoomapp.data.Datasource
 import com.example.zoomapp.model.Restaurants
 
-class RestaurantCardAdapter (
-        private val context: Context,
+class RestaurantCardAdapter(
+        private val context: RestaurantsFragment,
         private val dataset: List<Restaurants>)
         : RecyclerView.Adapter<RestaurantCardAdapter.RestaurantViewHolder>(){
 
+        //private lateinit var binding: RestaurantsFragment
 
         class RestaurantViewHolder(private val view: View) : RecyclerView.ViewHolder(view){
                 val textView: TextView = view.findViewById(R.id.name_textView)
