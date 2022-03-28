@@ -11,17 +11,22 @@ import com.example.zoomapp.R
 import com.example.zoomapp.RestaurantsFragment
 import com.example.zoomapp.data.Datasource
 import com.example.zoomapp.model.Restaurants
+import javax.sql.DataSource
 
 class RestaurantCardAdapter(
-        private val context: RestaurantsFragment,
-        private val dataset: List<Restaurants>)
+        private val context: Context?,
+private val dataset: List<Restaurants>)
         : RecyclerView.Adapter<RestaurantCardAdapter.RestaurantViewHolder>(){
+
+        val restList = Datasource.Restaurantes
+
+
 
         //private lateinit var binding: RestaurantsFragment
 
-        class RestaurantViewHolder(private val view: View) : RecyclerView.ViewHolder(view){
-                val textView: TextView = view.findViewById(R.id.name_textView)
-                val imageView: ImageView = view.findViewById(R.id.restaurant_imageView)
+        class RestaurantViewHolder(view: View?) : RecyclerView.ViewHolder(view!!){
+                val textView: TextView? = view?.findViewById(R.id.name_textView)
+                val imageView: ImageView? = view?.findViewById(R.id.restaurant_imageView)
 
         }
 
@@ -33,11 +38,11 @@ class RestaurantCardAdapter(
 
 
         override fun onBindViewHolder(holder: RestaurantViewHolder, position: Int) {
-                val item = dataset[position]
-                holder.textView.text = context.resources.getString(item.stringResourceId)
+                val item = restList[position]
+                holder.textView?.text = context?.resources?.getString(item.stringResourceId)
                 holder.imageView?.setImageResource(item.imageResourceId)
         }
 
-        override fun getItemCount() = dataset.size
+        override fun getItemCount() = restList.size
 
 }
