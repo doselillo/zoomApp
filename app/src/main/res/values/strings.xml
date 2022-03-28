@@ -5,4 +5,13 @@
     <string name="amistat">Cafè L\'AMISTAT</string>
     <string name="Biagios">Biagios</string>
     <string name="tratoria">Ristorante Tratoria</string>
+
+    <!-- Carta tagliatella -->
+    <string name="pizzas">PIZZAS</string>
+    <string name="cuatro_quesos">4 Quesos</string>
+    <string name="boloñesa">Boloñesa</string>
+    <string name="carbonara">Carbonara</string>
+    <string name="jamon_queso">Jamon y queso</string>
+    <string name="pollo">Pollo</string>
+    <string name="tarada">Tarada</string>
 </resources>
