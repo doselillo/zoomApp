@@ -6,6 +6,8 @@
     <string name="Biagios">Biagios</string>
     <string name="tratoria">Ristorante Tratoria</string>
 
+    <string name="description">Descripcion del producto...</string>
+
     <!-- Carta tagliatella -->
     <string name="pizzas">PIZZAS</string>
     <string name="cuatro_quesos">4 Quesos</string>

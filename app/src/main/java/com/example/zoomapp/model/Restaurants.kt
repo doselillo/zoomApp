@@ -10,6 +10,7 @@ data class Restaurants (
 
 data class Carts (
     @StringRes val name: Int,
-    @StringRes val price: Int,
-    @DrawableRes val add: Int
+    @StringRes val description: Int,
+    val price: Double?,
+    @DrawableRes val add: Int,
         )
