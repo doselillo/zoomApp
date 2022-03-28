@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">zoomApp</string>
+    <string name="app_name">Zum</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tagliatella">La Tagliatella</string>
+    <string name="amistat">Cafè L\'AMISTAT</string>
+    <string name="Biagios">Biagios</string>
+    <string name="tratoria">Ristorante Tratoria</string>
 </resources>
