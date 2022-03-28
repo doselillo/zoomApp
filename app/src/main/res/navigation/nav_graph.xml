@@ -9,5 +9,13 @@
         android:id="@+id/restaurantsFragment"
         android:name="com.example.zoomapp.RestaurantsFragment"
         android:label="fragment_restaurants"
-        tools:layout="@layout/fragment_restaurants" />
+        tools:layout="@layout/fragment_restaurants" >
+        <action
+            android:id="@+id/action_restaurantsFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.zoomapp.CartFragment"
+        android:label="CartFragment" />
 </navigation>

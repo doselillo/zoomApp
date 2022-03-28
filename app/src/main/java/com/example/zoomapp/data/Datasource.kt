@@ -20,17 +20,19 @@ object Datasource {
     Restaurants(R.string.Biagios, R.drawable.logo_biagios)
     )
 
-   /* val Carts: List<Carts> = listOf(
-        Carts(R.string.pizzas, Price.TEN , R.drawable.ic_baseline_add_24),
-        Carts(R.string.boloñesa, Price.ELEVEN, R.drawable.ic_baseline_add_24),
-        Carts(R.string.carbonara, Price.TWELVE, R.drawable.ic_baseline_add_24),
-        Carts(R.string.cuatro_quesos, Price.TEN, R.drawable.ic_baseline_add_24),
-        Carts(R.string.jamon_queso, Price.TEN, R.drawable.ic_baseline_add_24),
-        Carts(R.string.pollo, Price.TWELVE, R.drawable.ic_baseline_add_24),
-        Carts(R.string.tarada, Price.ELEVEN, R.drawable.ic_baseline_add_24)
-    )*/
 
-    val tagliatellaCart = mapOf(
+
+   val Carts: List<Carts> = listOf(
+        Carts(R.string.pizzas, R.string.description ,Price.TEN, R.drawable.ic_baseline_add_24),
+        Carts(R.string.boloñesa, R.string.description , Price.ELEVEN, R.drawable.ic_baseline_add_24),
+        Carts(R.string.carbonara, R.string.description ,Price.TWELVE, R.drawable.ic_baseline_add_24),
+        Carts(R.string.cuatro_quesos, R.string.description , Price.TEN, R.drawable.ic_baseline_add_24),
+        Carts(R.string.jamon_queso, R.string.description ,Price.TEN, R.drawable.ic_baseline_add_24),
+        Carts(R.string.pollo, R.string.description ,Price.TWELVE, R.drawable.ic_baseline_add_24),
+        Carts(R.string.tarada, R.string.description ,Price.ELEVEN, R.drawable.ic_baseline_add_24)
+    )
+
+    /*val tagliatellaCart = mapOf(
         "pizza" to
                 Carts(
                     name = R.string.pizzas,
@@ -80,6 +82,6 @@ object Datasource {
                     price = 8.00,
                     add = R.drawable.ic_baseline_add_24
                 ),
-    )
+    )*/
 
 }

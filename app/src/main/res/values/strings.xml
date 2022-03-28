@@ -8,6 +8,8 @@
 
     <string name="description">Descripcion del producto...</string>
 
+    <string name="price">Precio: %s</string>
+
     <!-- Carta tagliatella -->
     <string name="pizzas">PIZZAS</string>
     <string name="cuatro_quesos">4 Quesos</string>

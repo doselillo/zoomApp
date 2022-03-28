@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.zoomapp.adapter.RestaurantCardAdapter
@@ -36,6 +37,7 @@ class RestaurantsFragment : Fragment() {
         /*binding?.recyclerViewRestaurants?.layoutManager = LinearLayoutManager(activity)
         binding?.recyclerViewRestaurants?.adapter = RestaurantCardAdapter(activity)
 */
+        binding?.recyclerViewRestaurants?.setOnClickListener { findNavController().navigate(R.id.action_restaurantsFragment_to_cartFragment) }
     }
 
 

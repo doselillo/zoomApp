@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CartFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
+    <data>
 
-    <LinearLayout
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        tools:context=".CartFragment">
 
-        <ImageView
-            android:id="@+id/tagliatella_imageView"
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo_tagliatella" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/tagliatella_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_tagliatella" />
 
-    </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cart_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
-</FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>
