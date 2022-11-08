@@ -17,6 +17,7 @@ class CartFragment : Fragment() {
     private var binding: FragmentCartBinding? = null
     private var layoutManager: RecyclerView.LayoutManager? = null
     val myDataset = Datasource.Carts
+    private lateinit var recyclerView: RecyclerView
     //private var recyclerView: RecyclerView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

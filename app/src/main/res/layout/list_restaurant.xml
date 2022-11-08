@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LetterListFragment">
 
     <data>
-
+        <variable
+            name="restFragment"
+            type="com.example.zoomapp.adapter.RestaurantCardAdapter" />
     </data>
 
+
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/restaurant_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"

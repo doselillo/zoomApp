@@ -1,6 +1,5 @@
 package com.example.zoomapp
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,27 +15,37 @@ import com.example.zoomapp.databinding.FragmentRestaurantsBinding
 
 class RestaurantsFragment : Fragment() {
 
-    private var binding: FragmentRestaurantsBinding? = null
+    private var _binding: FragmentRestaurantsBinding? = null
+    private val binding get() = _binding!!
     private var layoutManager: RecyclerView.LayoutManager? = null
-    val myDataset = Datasource.loadRestaurants()
+    private val myDataset = Datasource.loadRestaurants()
     //private var recyclerView: RecyclerView? = null
+    private lateinit var recyclerView: RecyclerView
+    private var isLinearLayoutManager = true
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_restaurants, container, false)
+        /*return inflater.inflate(R.layout.fragment_restaurants, container, false)
         binding?.recyclerViewRestaurants?.layoutManager = LinearLayoutManager(activity)
         binding?.recyclerViewRestaurants?.adapter = RestaurantCardAdapter(activity, myDataset)
-        binding?.startFragment = this
+        binding?.startFragment = this*/
+        _binding = FragmentRestaurantsBinding.inflate(inflater, container, false)
+        return binding!!.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        /*binding?.recyclerViewRestaurants?.layoutManager = LinearLayoutManager(activity)
-        binding?.recyclerViewRestaurants?.adapter = RestaurantCardAdapter(activity)
-*/
+        /*super.onViewCreated(view, savedInstanceState)
+        binding?.recyclerViewRestaurants?.layoutManager = LinearLayoutManager(activity)
+        binding?.recyclerViewRestaurants?.adapter = RestaurantCardAdapter(activity, myDataset)
+        val myDataset = Datasource.loadRestaurants()*/
+        recyclerView = binding.recyclerViewRestaurants
+        binding?.recyclerViewRestaurants?.layoutManager = LinearLayoutManager(activity)
+        binding?.recyclerViewRestaurants?.adapter = RestaurantCardAdapter(activity, myDataset)
+        //chooseLayout()
 
         binding?.recyclerViewRestaurants?.setOnClickListener { findNavController().navigate(R.id.action_restaurantsFragment_to_cartFragment) }
     }

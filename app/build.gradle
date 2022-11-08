@@ -5,6 +5,10 @@ plugins {
     id 'androidx.navigation.safeargs.kotlin'
     id 'com.google.gms.google-services'
 }
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
     compileSdk 31
@@ -21,6 +25,7 @@ android {
 
     buildFeatures {
         dataBinding true
+        viewBinding true
     }
 
     buildTypes {
@@ -70,4 +75,7 @@ dependencies {
 
     implementation platform('com.google.firebase:firebase-bom:31.0.2')
     implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
+    implementation 'com.google.firebase:firebase-firestore:24.1.1'
 }

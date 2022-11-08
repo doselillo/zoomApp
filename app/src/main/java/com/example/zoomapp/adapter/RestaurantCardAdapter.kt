@@ -8,21 +8,27 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.zoomapp.CartFragment
 import com.example.zoomapp.R
 import com.example.zoomapp.RestaurantsFragment
+import com.example.zoomapp.RestaurantsFragmentDirections
 import com.example.zoomapp.data.Datasource
+import com.example.zoomapp.databinding.FragmentRestaurantsBinding
 import com.example.zoomapp.model.Restaurants
+import com.google.android.material.appbar.MaterialToolbar
 import javax.sql.DataSource
 
 class RestaurantCardAdapter(
-        private val context: Context?,
-private val dataset: List<Restaurants>)
+        private val context: FragmentActivity?,
+        private val dataset: List<Restaurants>)
         : RecyclerView.Adapter<RestaurantCardAdapter.RestaurantViewHolder>(){
 
+        private var _binding: FragmentRestaurantsBinding? = null
+        private val binding get() = _binding!!
         val restList = Datasource.Restaurantes
 
 
@@ -52,6 +58,10 @@ private val dataset: List<Restaurants>)
                 /*holder.itemView.setOnClickListener{ view ->
                         view.findNavController().navigate(R.id.action_restaurantsFragment_to_cartFragment)
                 }*/
+                holder.imageView?.setOnClickListener {
+                        val action = RestaurantsFragmentDirections.actionRestaurantsFragmentToCartFragment()
+                        holder.imageView.findNavController().navigate(action)
+                }
 
         }
 
