@@ -18,13 +18,15 @@ import com.example.zoomapp.RestaurantsFragment
 import com.example.zoomapp.RestaurantsFragmentDirections
 import com.example.zoomapp.data.Datasource
 import com.example.zoomapp.databinding.FragmentRestaurantsBinding
+import com.example.zoomapp.model.Carts
 import com.example.zoomapp.model.Restaurants
 import com.google.android.material.appbar.MaterialToolbar
 import javax.sql.DataSource
 
 class RestaurantCardAdapter(
         private val context: FragmentActivity?,
-        private val dataset: List<Restaurants>)
+        private val dataset: List<Restaurants>
+)
         : RecyclerView.Adapter<RestaurantCardAdapter.RestaurantViewHolder>(){
 
         private var _binding: FragmentRestaurantsBinding? = null

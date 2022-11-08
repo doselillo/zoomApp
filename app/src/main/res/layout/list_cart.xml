@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="8dp">
+    >
 
     <data>
 
@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         app:cardCornerRadius="4dp"
-        app:cardElevation="4dp">
+        app:cardElevation="4dp"
+        android:padding="@dimen/side_margins">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -21,9 +22,8 @@
 
             <TextView
                 android:id="@+id/name_textView"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
                 android:background="@color/primaryColor"
                 android:backgroundTint="@color/primaryLightColor"
                 android:paddingStart="8dp"
@@ -46,20 +46,21 @@
                 android:paddingTop="8dp"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 android:textColor="@color/primaryTextColor"
+                app:layout_constraintBottom_toTopOf="@+id/info_textView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="PRECIO" />
 
             <TextView
                 android:id="@+id/info_textView"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
                 android:background="@color/primaryColor"
                 android:backgroundTint="@color/primaryLightColor"
                 android:padding="8dp"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 android:textColor="@color/primaryTextColor"
+                app:layout_constraintEnd_toStartOf="@id/add_imageView"
                 app:layout_constraintStart_toStartOf="@+id/name_textView"
                 app:layout_constraintTop_toBottomOf="@+id/name_textView"
                 tools:text="Descripcion item" />
@@ -67,20 +68,21 @@
 
             <ImageView
                 android:id="@+id/add_imageView"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="#40922C48"
-                android:backgroundTint="@color/secondaryLightColor"
-                android:backgroundTintMode="add"
+                android:background="@color/primaryColor"
+                android:backgroundTint="@color/primaryLightColor"
+                android:clickable="true"
                 android:padding="8dp"
-                android:scaleType="centerInside"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/price_textView"
+                app:layout_constraintTop_toBottomOf="@+id/name_textView"
                 tools:src="@drawable/ic_baseline_add_24" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     </com.google.android.material.card.MaterialCardView>
 </layout>
