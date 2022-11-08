@@ -1,55 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".LetterListFragment">
-
-    <data>
-        <variable
-            name="restFragment"
-            type="com.example.zoomapp.adapter.RestaurantCardAdapter" />
-    </data>
-
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/restaurant_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        app:cardCornerRadius="4dp"
         app:cardElevation="4dp"
-        app:cardCornerRadius="4dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/restaurant_imageView"
-                android:layout_width="match_parent"
+                android:id="@+id/restaurantImage"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
-                android:background="#40922C48"
-                android:backgroundTint="@color/secondaryLightColor"
                 android:backgroundTintMode="add"
                 android:scaleType="centerInside"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/name_textView"
-                android:layout_width="match_parent"
+                android:id="@+id/restaurantName"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@color/primaryColor"
                 android:backgroundTint="@color/primaryLightColor"
-                android:paddingLeft="8dp"
-                android:paddingTop="8dp"
+                android:padding="8dp"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 android:textColor="@color/primaryTextColor"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/restaurant_imageView" />
+                app:layout_constraintTop_toBottomOf="@+id/restaurantImage"
+                tools:text="Texto de prueba" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
-</layout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
