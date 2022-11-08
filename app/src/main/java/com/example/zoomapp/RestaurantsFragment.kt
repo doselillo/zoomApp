@@ -37,6 +37,7 @@ class RestaurantsFragment : Fragment() {
         /*binding?.recyclerViewRestaurants?.layoutManager = LinearLayoutManager(activity)
         binding?.recyclerViewRestaurants?.adapter = RestaurantCardAdapter(activity)
 */
+
         binding?.recyclerViewRestaurants?.setOnClickListener { findNavController().navigate(R.id.action_restaurantsFragment_to_cartFragment) }
     }
 

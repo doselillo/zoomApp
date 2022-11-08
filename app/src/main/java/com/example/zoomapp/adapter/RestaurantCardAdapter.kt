@@ -1,12 +1,17 @@
 package com.example.zoomapp.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.zoomapp.CartFragment
 import com.example.zoomapp.R
 import com.example.zoomapp.RestaurantsFragment
 import com.example.zoomapp.data.Datasource
@@ -37,10 +42,17 @@ private val dataset: List<Restaurants>)
                 }
 
 
-        override fun onBindViewHolder(holder: RestaurantViewHolder, position: Int) {
+        override fun onBindViewHolder(holder: RestaurantViewHolder,position: Int) {
                 val item = restList[position]
                 holder.textView?.text = context?.resources?.getString(item.stringResourceId)
                 holder.imageView?.setImageResource(item.imageResourceId)
+                /*holder.itemView.setOnClickListener(
+                        Navigation.createNavigateOnClickListener(R.id.action_restaurantsFragment_to_cartFragment)
+                )*/
+                /*holder.itemView.setOnClickListener{ view ->
+                        view.findNavController().navigate(R.id.action_restaurantsFragment_to_cartFragment)
+                }*/
+
         }
 
         override fun getItemCount() = restList.size

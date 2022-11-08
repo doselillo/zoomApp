@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "859447325115",
+    "project_id": "zummapp-b559b",
+    "storage_bucket": "zummapp-b559b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859447325115:android:f9da9c3b65e0742e73549e",
+        "android_client_info": {
+          "package_name": "com.example.zoomapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859447325115-3u0re999v6jm1fm7jko5sjfgde97s7hp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6szcTLK6epAZCXJeIbP6MTbRqCCRPmA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859447325115-3u0re999v6jm1fm7jko5sjfgde97s7hp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

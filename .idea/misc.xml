@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/danie/AndroidStudioProjects/zoomApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/danie/AndroidStudioProjects/zoomApp/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/zoomApp/app/src/main/res/layout/fragment_auth.xml" value="0.17806484295845998" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/zoomApp/app/src/main/res/layout/fragment_cart.xml" value="0.18" />
         <entry key="..\:/Users/danie/AndroidStudioProjects/zoomApp/app/src/main/res/layout/fragment_restaurants.xml" value="0.151268115942029" />
         <entry key="..\:/Users/danie/AndroidStudioProjects/zoomApp/app/src/main/res/layout/list_cart.xml" value="0.22" />
         <entry key="..\:/Users/danie/AndroidStudioProjects/zoomApp/app/src/main/res/layout/list_restaurant.xml" value="0.1" />
