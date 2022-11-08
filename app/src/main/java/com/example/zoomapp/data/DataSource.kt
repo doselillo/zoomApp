@@ -8,10 +8,10 @@ import com.example.zoomapp.model.Restaurant
 object DataSource {
 
     fun getRestaurants(): List<Restaurant> {
-        return listOf<Restaurant>(
-            Restaurant.Tagliatella(R.string.tagliatella, R.drawable.logo_tagliatella, tagliatellaCart),
-            Restaurant.CafeAmistat(R.string.amistat, R.drawable.logo_amistat, cafeAmistatCart),
-            Restaurant.Biagios(R.string.Biagios, R.drawable.logo_biagios, biagiosCart)
+        return listOf(
+            Restaurant(R.string.tagliatella, R.drawable.logo_tagliatella, tagliatellaCart),
+            Restaurant(R.string.amistat, R.drawable.logo_amistat, cafeAmistatCart),
+            Restaurant(R.string.Biagios, R.drawable.logo_biagios, biagiosCart)
         )
     }
 

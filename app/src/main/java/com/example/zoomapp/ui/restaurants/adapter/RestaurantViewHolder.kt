@@ -8,8 +8,8 @@ class RestaurantViewHolder(private val binding: ListRestaurantBinding) : Recycle
 
     fun render(restaurant: Restaurant, onCardClicked: (restaurant: Restaurant) -> Unit) {
         binding.apply {
-            restaurantName.text = root.context.getString(restaurant.stringResourceId)
-            restaurantImage.setImageResource(restaurant.imageResourceId)
+            restaurantName.text = root.context.getString(restaurant.name)
+            restaurantImage.setImageResource(restaurant.image)
 
             root.setOnClickListener {
                 onCardClicked(restaurant)

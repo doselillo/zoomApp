@@ -11,7 +11,7 @@ class CartViewHolder(private val binding: ListCartBinding) : RecyclerView.ViewHo
         binding.apply {
             restaurantName.text = root.context.getString(cart.name)
             description.text = root.context.getString(cart.description)
-            price.text = root.context.getString(R.string.price, cart.price)
+            price.text = root.context.getString(R.string.price, cart.price.value)
         }
     }
 

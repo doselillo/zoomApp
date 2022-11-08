@@ -11,7 +11,7 @@ class CartCardAdapter : RecyclerView.Adapter<CartViewHolder>() {
     private val cartList = mutableListOf<Cart>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CartViewHolder {
-        return CartViewHolder(ListCartBinding.inflate(LayoutInflater.from(parent.context)))
+        return CartViewHolder(ListCartBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: CartViewHolder, position: Int) {

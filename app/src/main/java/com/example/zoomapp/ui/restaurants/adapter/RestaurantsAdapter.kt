@@ -13,7 +13,7 @@ class RestaurantsAdapter(
     private val restaurantsList = mutableListOf<Restaurant>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantViewHolder {
-        return RestaurantViewHolder(ListRestaurantBinding.inflate(LayoutInflater.from(parent.context)))
+        return RestaurantViewHolder(ListRestaurantBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: RestaurantViewHolder, position: Int) {
