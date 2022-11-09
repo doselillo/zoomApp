@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Zum</string>
+    <string name="app_name">Sum</string>
 
     <string name="tagliatella">La Tagliatella</string>
     <string name="amistat">Cafè L\'AMISTAT</string>
@@ -19,6 +19,24 @@
     <string name="pollo">Pollo</string>
     <string name="tarada">Tarada</string>
 
+    <!-- Carta amistat -->
+    <string name="café">Café</string>
+    <string name="coca_cola">Coca-Cola</string>
+    <string name="agua">Agua</string>
+    <string name="tostadas">Tostadas</string>
+    <string name="tortilla">Tortilla</string>
+    <string name="leche">Leche</string>
+    <string name="zumo">Zumo</string>
+
+    <!-- Carta biagios -->
+    <string name="item_1">item 1</string>
+    <string name="item_2">item 2</string>
+    <string name="item_3">item 3</string>
+    <string name="item_4">item 4</string>
+    <string name="item_5">item 5</string>
+    <string name="item_6">item 6</string>
+    <string name="item_7">item ca7</string>
+
     <!-- Botones  -->
 
     <string name="prompt_email">Email</string>
@@ -29,7 +47,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="log_in_button_text">LOG IN</string>
-    <string name="sign_up_button_text">SIGN UP</string>
+    <string name="log_in_button_text">ACCEDER</string>
+    <string name="sign_up_button_text">REGISTRAR</string>
 
 </resources>

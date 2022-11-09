@@ -8,4 +8,15 @@
   <color name="secondaryDarkColor">#c7cc00</color>
   <color name="primaryTextColor">#ffffff</color>
   <color name="secondaryTextColor">#000000</color>
+
+  <!--TAGLIATELLA-->
+  <color name="primaryColorTagliatella">#922C48</color>
+  <color name="primaryLightColorTagliatella">#2c2c2c</color>
+  <color name="primaryDarkColorTagliatella">#000000</color>
+  <color name="secondaryColorTagliatella">#ffff00</color>
+  <color name="secondaryLightColorTagliatella">#ffff5a</color>
+  <color name="secondaryDarkColorTagliatella">#c7cc00</color>
+  <color name="primaryTextColorTagliatella">#ffffff</color>
+  <color name="secondaryTextColorTagliatella">#000000</color>
+
 </resources>

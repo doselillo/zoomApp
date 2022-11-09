@@ -25,6 +25,8 @@
                 android:id="@+id/restaurantImage"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
+                android:background="@color/secondaryLightColor"
+                android:backgroundTint="@color/secondaryLightColor"
                 android:backgroundTintMode="add"
                 android:scaleType="centerInside"
                 app:layout_constraintEnd_toEndOf="parent"

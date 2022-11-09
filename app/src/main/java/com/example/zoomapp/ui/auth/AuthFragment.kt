@@ -1,12 +1,15 @@
 package com.example.zoomapp.ui.auth
 
+import android.content.Context
 import android.os.Bundle
+import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.zoomapp.R
 import com.example.zoomapp.databinding.FragmentAuthBinding
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_auth.*
@@ -18,11 +21,14 @@ class AuthFragment : Fragment() {
 
     private var auth: FirebaseAuth = FirebaseAuth.getInstance()
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         _binding = FragmentAuthBinding.inflate(inflater, container, false)
         return binding.root
+
+
     }
 
     override fun onDestroyView() {
